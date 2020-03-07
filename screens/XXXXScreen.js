@@ -11,7 +11,7 @@ import IconsAntDesign from 'react-native-vector-icons/AntDesign'
 import { Left, Right, Row } from 'native-base'
 import { PieChart } from 'react-native-chart-kit'
 // import * as ART from '@react-native-community/art'
-import Pie from 'react-native-pie'
+// import Pie from 'react-native-pie'
 let deviceWidth = Dimensions.get('window').width
 let deviceHeight = Dimensions.get('window').height
 
@@ -75,7 +75,7 @@ class XXXXScreen extends React.Component {
             </Right>
           </View>
           <Text style={styles.fontLgGray}>IFL Rank #762</Text>
-          {/* <PieChart
+          <PieChart
             data={dataPie}
             width={deviceWidth * 0.9}
             height={220}
@@ -84,13 +84,13 @@ class XXXXScreen extends React.Component {
             backgroundColor='transparent'
             paddingLeft='15'    
             hasLegend={false}    
-          /> */}
-          <Pie
+          />
+          {/* <Pie
             radius={70}
             innerRadius={40}
             series={[10, 20, 30, 40]}
             colors={['#f00', '#0f0', '#00f', '#ff0']}
-          />
+          /> */}
         </View>
       </View>
     )
@@ -112,7 +112,8 @@ const styles = StyleSheet.create({
     padding: deviceHeight / 80,
     margin: 5,
     width: deviceWidth * 0.97,
-    marginTop: deviceHeight / 20
+    marginTop: deviceHeight / 20,
+    overflow: 'hidden',
   },
   fontLgBold: {
     fontWeight: 'bold',
@@ -127,7 +128,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     padding: 5,
-    borderRadius: 3
+    borderRadius: 3,
+    overflow: 'hidden',
   }
 })
 

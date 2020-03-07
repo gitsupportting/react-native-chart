@@ -44,7 +44,7 @@ class XXScreen extends React.Component {
           </Right>
         </View>
         <View
-          style={{ borderColor: '#d1d0d0', borderWidth: 1, borderRadius: 5 }}
+          style={{ borderColor: '#d1d0d0', borderWidth: 1, borderRadius: 5, overflow: 'hidden', }}
         >
           <View style={styles.performance}>
             <Left>
@@ -247,7 +247,8 @@ const styles = StyleSheet.create({
     padding: deviceHeight / 80,
     paddingTop: 0,
     margin: 5,
-    width: deviceWidth * 0.97
+    width: deviceWidth * 0.97,
+    overflow: 'hidden',
   },
   performance: {
     flexDirection: 'row',
@@ -300,7 +301,8 @@ const styles = StyleSheet.create({
     padding: 11,
     borderRadius: 25,
     borderColor: '#d1d0d0',
-    borderWidth: 3
+    borderWidth: 3,
+    overflow: 'hidden',
   },
   avatarCash: {
     fontSize: 28,
@@ -311,7 +313,8 @@ const styles = StyleSheet.create({
     padding: 11,
     borderRadius: 25,
     borderColor: '#d1d0d0',
-    borderWidth: 3
+    borderWidth: 3,
+    overflow: 'hidden',
   },
   labelBlack: {
     backgroundColor: 'black',
@@ -319,7 +322,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     padding: 3,
-    borderRadius: 5
+    borderRadius: 5,
+    overflow: 'hidden',
   }
 })
 

@@ -112,7 +112,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: deviceHeight / 80,
     margin: deviceHeight / 80,
-    width: deviceWidth * 0.6
+    width: deviceWidth * 0.6,
+    overflow: 'hidden',
   },
   borders: {
     borderColor: '#d1d0d0',
@@ -121,7 +122,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: deviceHeight / 100,
     margin: deviceHeight / 80,
-    width: deviceWidth * 0.8
+    width: deviceWidth * 0.8,
+    overflow: 'hidden',
   },
   labelWhite: {
     fontWeight: 'bold',
@@ -132,7 +134,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     padding: 5,
-    borderRadius: 3
+    borderRadius: 3,
+    overflow: 'hidden',
   },
   labelBlack: {
     backgroundColor: 'black',
@@ -140,7 +143,8 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
     padding: 10,
-    borderRadius: 5
+    borderRadius: 5,
+    overflow: 'hidden',
   },
   logo: {
     borderRadius: deviceWidth * 0.17,
@@ -148,7 +152,8 @@ const styles = StyleSheet.create({
     height: deviceWidth * 0.34,
     borderColor: '#d1d0d0',
     borderWidth: 4,
-    margin: deviceHeight / 80
+    margin: deviceHeight / 80,
+    overflow: 'hidden',
   },
   smalFontBlod: {
     fontSize: 12,
@@ -163,7 +168,8 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     color: 'white',
     width: deviceWidth / 6,
-    paddingLeft: 10
+    paddingLeft: 10,
+    overflow: 'hidden',
   },
   labelDone: {
     backgroundColor: '#3edd96',
@@ -173,7 +179,8 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     color: 'white',
     width: deviceWidth / 6,
-    paddingLeft: 20
+    paddingLeft: 20,
+    overflow: 'hidden',
   },
   smalFont: {
     fontSize: 10,

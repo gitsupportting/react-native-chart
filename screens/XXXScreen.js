@@ -172,7 +172,8 @@ const styles = StyleSheet.create({
     padding: deviceHeight / 40,
     margin: 5,
     width: deviceWidth * 0.9,
-    marginTop: deviceHeight / 20
+    marginTop: deviceHeight / 20,
+    overflow: 'hidden',
   },
   avatar: {
     fontSize: 50,
@@ -183,7 +184,8 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 40,
     borderColor: '#d1d0d0',
-    borderWidth: 3
+    borderWidth: 3,
+    overflow: 'hidden',
   },
   fontLarge: {
     fontSize: 26,
@@ -211,29 +213,32 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingHorizontal: 30,
     marginHorizontal: 20,
-    borderRadius: 5
+    borderRadius: 5,
+    overflow: 'hidden',
   },
   roundBtn: {
     padding: 3,
     paddingHorizontal: deviceWidth / 25,
     // width: deviceWidth / 6.5,
     backgroundColor: 'white',
-    borderRadius: 20,
+    borderRadius: 10,
     borderWidth: 1,
     borderColor: '#ecebef',
     color: '#3b86ec',
-    marginHorizontal: 3
+    marginHorizontal: 3,
+    overflow: 'hidden',
   },
   roundBtnActive: {
     paddingVertical: 3,
     paddingHorizontal: deviceWidth / 25,
     // width: deviceWidth / 6.5,
     backgroundColor: '#3b86ec',
-    borderRadius: 20,
+    borderRadius: 10,
     borderWidth: 1,
     borderColor: '#3b86ec',
     color: 'white',
     marginHorizontal: 3,
+    overflow: 'hidden',
   }
 })
 
