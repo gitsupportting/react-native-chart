@@ -16,34 +16,8 @@ class XScreen extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Pat Muhi</Text>
-        <View style={styles.bordersSmall}>
-          <Left style={{ marginLeft: 15 }}>
-            <Text style={{ flexDirection: 'row' }}>
-              <Icons name='usd' style={{ fontSize: 28 }} />
-              <Text style={styles.labelWhite}>1000</Text>
-            </Text>
-          </Left>
-          <Right style={{ marginRight: 15 }}>
-            <Text style={styles.labelBlue}>+6.51%</Text>
-          </Right>
-        </View>
-        <Image source={require('../assets/avatar.png')} style={styles.logo} />
-        <View style={styles.borders}>
-          <Left>
-            <TouchableOpacity>
-              <Text style={styles.labelBlack}>Upload Funds</Text>
-            </TouchableOpacity>
-          </Left>
-          <Right>
-            <TouchableOpacity>
-              <Text style={styles.labelBlack}>Withdraw Funds</Text>
-            </TouchableOpacity>
-          </Right>
-        </View>
-        <View>
-          <Text style={styles.smalFontBlod}>Uploads</Text>
-          <View style={styles.borders}>
+          <Text style={styles.header}>Pat Muhi</Text>
+          <View style={styles.bordersSmall}>
             <Left style={{ marginLeft: 15 }}>
               <Text style={{ flexDirection: 'row' }}>
                 <Icons name='usd' style={{ fontSize: 28 }} />
@@ -51,44 +25,70 @@ class XScreen extends React.Component {
               </Text>
             </Left>
             <Right style={{ marginRight: 15 }}>
-              <View style={{ alignItems: 'center' }}>
-                <Text style={styles.labelPending}>Pending</Text>
-                <Text style={styles.smalFont}>02/05/2020</Text>
-              </View>
+              <Text style={styles.labelBlue}>+6.51%</Text>
             </Right>
           </View>
-        </View>
-        <View>
-          <Text style={styles.smalFontBlod}>Withdraws</Text>
+          <Image source={require('../assets/avatar.png')} style={styles.logo} />
           <View style={styles.borders}>
-            <Left style={{ marginLeft: 15 }}>
-              <Text style={{ flexDirection: 'row' }}>
-                <Icons name='usd' style={{ fontSize: 28 }} />
-                <Text style={styles.labelWhite}>100</Text>
-              </Text>
+            <Left>
+              <TouchableOpacity>
+                <Text style={styles.labelBlack}>Upload Funds</Text>
+              </TouchableOpacity>
             </Left>
-            <Right style={{ marginRight: 15 }}>
-              <View style={{ alignItems: 'center' }}>
-                <Text style={styles.labelDone}>Done</Text>
-                <Text style={styles.smalFont}>02/05/2020</Text>
-              </View>
+            <Right>
+              <TouchableOpacity>
+                <Text style={styles.labelBlack}>Withdraw Funds</Text>
+              </TouchableOpacity>
             </Right>
           </View>
-          <View style={styles.borders}>
-            <Left style={{ marginLeft: 15 }}>
-              <Text style={{ flexDirection: 'row' }}>
-                <Icons name='usd' style={{ fontSize: 28 }} />
-                <Text style={styles.labelWhite}>50</Text>
-              </Text>
-            </Left>
-            <Right style={{ marginRight: 15 }}>
-              <View style={{ alignItems: 'center' }}>
-                <Text style={styles.labelDone}>Done</Text>
-                <Text style={styles.smalFont}>02/05/2020</Text>
-              </View>
-            </Right>
+          <View>
+            <Text style={styles.smalFontBlod}>Uploads</Text>
+            <View style={styles.borders}>
+              <Left style={{ marginLeft: 15 }}>
+                <Text style={{ flexDirection: 'row' }}>
+                  <Icons name='usd' style={{ fontSize: 28 }} />
+                  <Text style={styles.labelWhite}>1000</Text>
+                </Text>
+              </Left>
+              <Right style={{ marginRight: 15 }}>
+                <View style={{ alignItems: 'center' }}>
+                  <Text style={styles.labelPending}>Pending</Text>
+                  <Text style={styles.smalFont}>02/05/2020</Text>
+                </View>
+              </Right>
+            </View>
           </View>
-        </View>
+          <View>
+            <Text style={styles.smalFontBlod}>Withdraws</Text>
+            <View style={styles.borders}>
+              <Left style={{ marginLeft: 15 }}>
+                <Text style={{ flexDirection: 'row' }}>
+                  <Icons name='usd' style={{ fontSize: 28 }} />
+                  <Text style={styles.labelWhite}>100</Text>
+                </Text>
+              </Left>
+              <Right style={{ marginRight: 15 }}>
+                <View style={{ alignItems: 'center' }}>
+                  <Text style={styles.labelDone}>Done</Text>
+                  <Text style={styles.smalFont}>02/05/2020</Text>
+                </View>
+              </Right>
+            </View>
+            <View style={styles.borders}>
+              <Left style={{ marginLeft: 15 }}>
+                <Text style={{ flexDirection: 'row' }}>
+                  <Icons name='usd' style={{ fontSize: 28 }} />
+                  <Text style={styles.labelWhite}>50</Text>
+                </Text>
+              </Left>
+              <Right style={{ marginRight: 15 }}>
+                <View style={{ alignItems: 'center' }}>
+                  <Text style={styles.labelDone}>Done</Text>
+                  <Text style={styles.smalFont}>02/05/2020</Text>
+                </View>
+              </Right>
+            </View>
+          </View>
       </View>
     )
   }
@@ -98,7 +98,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginHorizontal:27,
   },
   header: {
     fontSize: 35,
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
     padding: deviceHeight / 80,
     margin: deviceHeight / 80,
     width: deviceWidth * 0.6,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   borders: {
     borderColor: '#d1d0d0',
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
     padding: deviceHeight / 100,
     margin: deviceHeight / 80,
     width: deviceWidth * 0.8,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   labelWhite: {
     fontWeight: 'bold',
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     padding: 5,
     borderRadius: 3,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   labelBlack: {
     backgroundColor: 'black',
@@ -144,7 +145,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     padding: 10,
     borderRadius: 5,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   logo: {
     borderRadius: deviceWidth * 0.17,
@@ -153,7 +154,7 @@ const styles = StyleSheet.create({
     borderColor: '#d1d0d0',
     borderWidth: 4,
     margin: deviceHeight / 80,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   smalFontBlod: {
     fontSize: 12,
@@ -169,7 +170,7 @@ const styles = StyleSheet.create({
     color: 'white',
     width: deviceWidth / 6,
     paddingLeft: 10,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   labelDone: {
     backgroundColor: '#3edd96',
@@ -180,7 +181,7 @@ const styles = StyleSheet.create({
     color: 'white',
     width: deviceWidth / 6,
     paddingLeft: 20,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   smalFont: {
     fontSize: 10,
